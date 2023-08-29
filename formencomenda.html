@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/formenco.css">
+    <title>Encomendar produto</title>
+</head>
+<body onload="trocarImg()">
+    <h1>Carpintaria Lopes</h1>
+    <main>
+        <section>
+            <figure>
+                <img src="" alt="Imagem do produto a ser encomendado">
+                <figcaption>100.000, 00</figcaption>
+            </figure>
+            <!-- <div class="informacoes">
+                <h2>Sobre o Produto</h2>
+                <p><strong>Nome</strong></p>
+                <p> O produto destacado é feito de madeira, como mostrado na figura. A madeira e outros
+                    materiais usados para criação deste produtos, têm uma resistência ampla, o que influencia
+                    fortemente na duração do produto (15 - 20 anos). Produto recomendado para sala de jantar,
+                    restaurantes, mini-bar, e outros lugares a sua preferência..</p>
+            </div> -->
+        </section>
+        <form action="">
+            <div>
+                <label>Tipo de obra</label>
+                <input type="text">
+            </div>
+            <div>
+                <label>Tamanho</label>
+                <input type="number">
+            </div>
+            <div>
+                <label>Orçamento</label>
+                <input type="text">
+            </div>
+            <div>
+                <label>Data de início</label>
+                <input type="date">
+            </div>
+            <div>
+                <label>Data de entrega</label>
+                <input type="date">
+            </div>
+            <div>
+                <label>Montante de entrega</label>
+                <input type="number">
+            </div>
+            <div>
+                <label>Montante a faltar</label>
+                <input type="number">
+            </div>
+            <div>
+                <label>Aplicação</label>
+                <input type="checkbox">
+                <label>Cor</label>
+                <input type="color">
+                <label>Transporte</label>
+                <input type="checkbox">
+            </div>
+            <button type="submit">Comprar</button>
+            <button type="button">Cancelar</button>
+        </form>
+    </main>
+
+    <script src="js/formenco.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+body {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+input {
+    margin-bottom: .5em;
+}
+figure {
+    width: 100%;
+}
+img {
+    width: 100%;
+}
+.informacoes {
+    width: 100%;
+}
+button {
+    border: 1px solid orange;
+    color: orange;
+    background-color: white;
+    display: inline-block;
+    width: 40%;
+    padding: 10px;
+    margin: 5px 0;
+}
+button:hover {
+    color: black;
+    background-color: orange;
+}
+@media(min-width: 700px) {
+    figure {
+        width: 50%;
+    }
+
+    section {
+        flex-direction: column;
+    }
+}

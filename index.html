@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- rgb(20, 20, 56); -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carpintaria Lopes</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/rodape.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="./js/jquery-3.6.1.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container">
+                <h1 class="navbar-brand">Carpintaria <strong style="color: red">Lopes</strong></h1>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#menu">
+                    <img src="img/icon/menu.png" alt="Menu">
+                </button>
+                <section class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#produto">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacte</a></li>
+                    </ul>
+                </section>
+                <form class="input-group">
+                    <input class="form-control" type="text" placeholder="O que procuras?">
+                    <span class="input-group-btn"><button class="btn btn-outline-danger">Search</button></span>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container">
+            <article class="destaque">
+                <p><strong>Seja um cliente nosso.</strong></p>
+                <p>Confira abaixo as nossas sugestões.</p>
+            </article>
+        </section>
+        <div class="jumbotron bg-transparent">
+            <div class="container">
+                <!-- <h2 class="text-uppercase font-weight-bold">Destaque de hoje</h2> -->
+                <section class="row mt-3 d-flex align-items-center">
+                    <figure class="sugestoes mx-md-auto mx-lg-0 col-md-10 col-lg-5">
+                        <img src="./img/produtos (7).png" alt="Membros da Carpintaria Lopes"
+                            class="img-fluid img-thumbnail">
+                        <figcaption>Mais comprados</figcaption>
+                    </figure>
+                    <section class="col-lg-7">
+                        <h3 class="h4 text-uppercase">Informações do <strong style="color:red;">produto em
+                                destaque</strong></h3>
+                        <h4 class="h5 mt-4">Jogo de 6 cadeiras</h4>
+                        <p class="text-justify">
+                            O produto destacado é feito de madeira, como mostrado na figura. A madeira e outros
+                            materiais usados para criação deste produtos, têm uma resistência ampla, o que influencia
+                            fortemente na duração do produto (15 - 20 anos). Produto recomendado para sala de jantar,
+                            restaurantes, mini-bar, e outros lugares a sua preferência.
+                        </p>
+                        <button class="btn btn-outline-warning btn-lg mb-3" data-toggle="modal"
+                            data-target="#exampleModal">Comprar</button>
+                        <p>Compre ou encomende qualquer tipo de mobília ao seu desejo.</p>
+                        <p>Estamos a disposição para tornar real qualquer tipo de mobília que o cliente precise.</p>
+                    </section>
+                </section>
+            </div>
+        </div>
+        <div class="container">
+            <h2 class="text-uppercase font-weight-bold" id="produto">Produtos</h2>
+            <section class="row text-center">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card" id="produtos_1">
+                        <div class="card-header card-title">
+                            <h5>Nome do Produto</h5>
+                        </div>
+                        <div class="card-body">
+                            <figure>
+                                <img class="img-fluid img-thumbnail" src="./img/produtos (1).jpg">
+                                <figcaption class="text-danger font-italic">50.000 kz</figcaption>
+                            </figure>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-outline-warning btn-block"
+                                onclick="abrir('produtos (1).jpg')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card" id="produtos_2">
+                        <div class="card-header card-title">
+                            <h5>Nome do Produto</h5>
+                        </div>
+                        <div class="card-body">
+                            <figure>
+                                <img class="img-fluid img-thumbnail" src="./img/produtos (2).jpg">
+                                <figcaption class="text-danger">Preço $</figcaption>
+                            </figure>
+                        </div>
+                        <div class="card-footer">
+                            <button onclick="abrir('produtos (2).jpg')"
+                                class="btn btn-outline-warning btn-block">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card" id="produtos_3">
+                        <div class="card-header card-title">
+                            <h5>Nome do Produto</h5>
+                        </div>
+                        <div class="card-body">
+                            <figure>
+                                <img class="img-fluid img-thumbnail" src="./img/produtos (4).jpg">
+                                <figcaption class="text-danger">Preço $</figcaption>
+                            </figure>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-outline-warning btn-block"
+                                onclick="abrir('produtos (4).jpg')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card" id="produtos_4">
+                        <div class="card-header card-title">
+                            <h5>Nome do Produto</h5>
+                        </div>
+                        <div class="card-body">
+                            <figure>
+                                <img class="img-fluid img-thumbnail" src="./img/produtos (8).jpg">
+                                <figcaption class="text-danger">Preço $</figcaption>
+                            </figure>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-outline-warning btn-block"
+                                onclick="abrir('produtos (8).jpg')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card" id="produtos_5">
+                        <div class="card-header card-title">
+                            <h5>Nome do Produto</h5>
+                        </div>
+                        <div class="card-body">
+                            <figure>
+                                <img class="img-fluid img-thumbnail" src="./img/produtos (9).jpg">
+                                <figcaption class="text-danger">Preço $</figcaption>
+                            </figure>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-outline-warning btn-block"
+                                onclick="abrir('produtos (9).jpg')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card" id="produtos_6">
+                        <div class="card-header card-title">
+                            <h5>Nome do Produto</h5>
+                        </div>
+                        <div class="card-body">
+                            <figure>
+                                <img class="img-fluid img-thumbnail" src="./img/produtos (10).jpg">
+                                <figcaption class="text-danger">Preço $</figcaption>
+                            </figure>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-outline-warning btn-block"
+                                onclick="abrir('produtos (10).jpg')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card" id="produtos_7">
+                        <div class="card-header card-title">
+                            <h5>Nome do Produto</h5>
+                        </div>
+                        <div class="card-body">
+                            <figure>
+                                <img class="img-fluid img-thumbnail" src="./img/produtos (7).jpg">
+                                <figcaption class="text-danger">Preço $</figcaption>
+                            </figure>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-outline-warning btn-block"
+                                onclick="abrir('produtos (7).jpg')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="card" id="produtos_8">
+                        <div class="card-header card-title">
+                            <h5>Nome do Produto</h5>
+                        </div>
+                        <div class="card-body">
+                            <figure>
+                                <img class="img-fluid img-thumbnail" src="./img/cama2.jpg">
+                                <figcaption class="text-danger">Preço $</figcaption>
+                            </figure>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn btn-outline-warning btn-block"
+                                onclick="abrir('cama2.jpg')">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </main>
+    <footer>
+        <h2 class="rodape-titulo">Saiba mais sobre nós</h2>
+        <div class="container text-sm-center text-md-left d-md-flex align-items-center">
+            <div class="row mx-auto">
+                <section class="col-md-6 col-lg-3">
+                    <h3 class="rodape-subtitulo">Nossos serviços</h3>
+                    <ul class="nav d-flex justify-content-center flex-column servicos">
+                        <li class="nav-item"><a class="nav-link" href="#">Mobílias por encomenda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Aplicação de mobílias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Transporte de mobílias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Reparação e manutenção de mobílias</a></li>
+                    </ul>
+                </section>
+                <section class="col-md-6 col-lg-3">
+                    <h3 class="rodape-subtitulo">Mais vendidos</h3>
+                    <ul class="nav d-flex justify-content-center flex-column servicos">
+                        <li class="nav-item"><a class="nav-link" href="#">Mobílias por encomenda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Aplicação de mobílias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Transporte de mobílias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Reparação e manutenção de mobílias</a></li>
+                    </ul>
+                </section>
+                <section class="col-md-6 col-lg-3">
+                    <h3 class="rodape-subtitulo">Parcerias</h3>
+                    <ul class="nav d-flex justify-content-center flex-column servicos">
+                        <li class="nav-item"><a class="nav-link" href="#">Mobílias por encomenda</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Aplicação de mobílias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Transporte de mobílias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Reparação e manutenção de mobílias</a></li>
+                    </ul>
+                </section>
+                <section class="col-md-6 col-lg-3">
+                    <h3 id="contacto" class="rodape-subtitulo">Contacte - nos</h3>
+                    <div class="d-md-flex align-items-center">
+                        <dl>
+                            <dt>Localização Física:</dt>
+                            <dd>
+                                <address>
+                                    <a href="#">Luanda/Cacuaco/Kicolo/Malueca</a>
+                                </address>
+                            </dd>
+                            <dt>Redes sociais</dt>
+                            <dd>
+                                <ul class="nav d-flex justify-content-center justify-content-md-start">
+                                    <li class="nav-item" style="font-size: 30px;"><a href="#"
+                                            class="nav-link fa fa-facebook"></a>
+                                    </li>
+                                    <li class="nav-item" style="font-size: 30px;"><a href="#"
+                                            class="nav-link fa fa-whatsapp"></a>
+                                    </li>
+                                    <li class="nav-item" style="font-size: 30px;"><a href="#"
+                                            class="nav-link fa fa-instagram pr-0"></a>
+                                    </li>
+                                </ul>
+                            </dd>
+                        </dl>
+
+                    </div>
+                </section>
+            </div>
+        </div>
+        <p class="mt-4">Carpintaria Lopes, copyright &copy;</p>
+    </footer>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/formenco.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+
+</html>
